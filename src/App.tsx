@@ -7,7 +7,7 @@ import AccessTimeIcon from '@mui/icons-material/AccessTime';
 function App() {
   return (
     <Box sx={{ display: "flex", flexDirection: "column", gap: "10px", justifyContent: "center", width: "100vw", alignItems: "center", height: "100vh", backgroundColor: "#989898" }}>
-      <Card sx={{ minWidth: 500, p: 2,backgroundColor: "#222", color: "#aaa" }}>
+      <Card sx={{ minWidth: 500, p: 2, backgroundColor: "#222", color: "#aaa" }}>
         <CardContent sx={{ display: "flex", justifyContent: "space-between" }}>
           <Typography>
             Pre-edit cleanup
@@ -27,16 +27,16 @@ function App() {
         </Box>
         <Box sx={{ display: "flex", justifyContent: "space-between", p: 2, pt: 2.5, pb: 1 }}>
           <Typography>Completed</Typography>
-          <Box sx={{display: "flex", verticalAlign: "middle", gap: 0.5}}>
-            <AccessTimeIcon /> 
+          <Box sx={{ display: "flex", verticalAlign: "middle", gap: 0.5 }}>
+            <AccessTimeIcon />
             <Typography>16/06/2024 14:30:00</Typography>
           </Box>
         </Box>
       </Card>
-      <Card sx={{ minWidth: 500, p: 2,backgroundColor: "#222", color: "#aaa" }}>
+      <Card sx={{ minWidth: 500, p: 2, backgroundColor: "#222", color: "#aaa" }}>
         <CardContent sx={{ display: "flex", justifyContent: "space-between" }}>
           <Typography>
-          Artcatalog
+            Artcatalog
           </Typography>
           <Box>
             <PersonOutlineIcon />
@@ -53,8 +53,8 @@ function App() {
         </Box>
         <Box sx={{ display: "flex", justifyContent: "space-between", p: 2, pt: 2.5, pb: 1 }}>
           <Typography color="green">Running</Typography>
-          <Box sx={{display: "flex", verticalAlign: "middle", gap: 0.5}}>
-            <AccessTimeIcon /> 
+          <Box sx={{ display: "flex", verticalAlign: "middle", gap: 0.5 }}>
+            <AccessTimeIcon />
             <Typography>16/06/2024 14:30:00</Typography>
           </Box>
         </Box>
@@ -66,7 +66,7 @@ function App() {
 function Section(props: { name: string, files: Array<string> }) {
   return <Box minWidth={180} textAlign="center" sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
     <Box display="flex" sx={{ verticalAlign: "middle", gap: 1 }}>
-      <Typography flexGrow="1" border="1px solid lightgrey" borderRadius="5px">{props.name}</Typography>
+      <Typography flexGrow="1" border="1px solid lightgrey" borderRadius="5px" sx={{ pt: "3px" }}>{props.name}</Typography>
       <DownloadIcon />
     </Box>
     <Box display="flex" flexDirection="column" gap={1}>
